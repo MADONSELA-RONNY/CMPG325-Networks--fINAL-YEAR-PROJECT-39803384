@@ -40,4 +40,5 @@ Accommodated security variance configurations to handle added surveillance equip
 *   **ACL Application:** Applying an extended Access Control List (`CCTV-SEGMENTATION`) inbound on the **Gi0/0.40** router sub-interface.
 *   **Traffic Restraints:** Enforcing explicit rule statements blocking CCTV hardware from initiating connections to Production (`VLAN 20`) or Sales/Yard (`VLAN 30`).
 *   **Monitoring Access:** Keeping rule architectures open to explicitly allow the Admin/Office network (`VLAN 10`) to safely reach and watch active video streams.
-*
+*```
+

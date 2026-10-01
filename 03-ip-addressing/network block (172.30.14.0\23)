@@ -1,0 +1,11 @@
+4. IP Addressing Plan
+The table below details the subnetting of the assigned block 172.30.14.0/23 into four /26 subnets (62 usable hosts each), which comfortably accommodates the current device counts per department with room to grow.
+VLAN	Purpose	Subnet (CIDR)	Usable Range	Gateway (Router sub-int)	Broadcast
+10	Admin / Office	172.30.14.0/26	172.30.14.1 - .62	172.30.14.1 (Gi0/0.10)	172.30.14.63
+20	Production Floor	172.30.14.64/26	172.30.14.65 - .126	172.30.14.65 (Gi0/0.20)	172.30.14.127
+30	Sales / Yard	172.30.14.128/26	172.30.14.129 - .190	172.30.14.129 (Gi0/0.30)	172.30.14.191
+40	Security / CCTV (CR7)	172.30.14.192/26	172.30.14.193 - .254	172.30.14.193 (Gi0/0.40)	172.30.14.255
+99	Native (unused, trunk only)	n/a	n/a	n/a	n/a
+
+Reserved for future use:
+Reserved	Future expansion (Wi-Fi, new departments)	172.30.15.0/24	172.30.15.1 - .254	Not yet allocated	172.30.15.255
